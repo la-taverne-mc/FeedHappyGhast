@@ -6,4 +6,4 @@ item: golden_apple
 duration_in_seconds: 1200
 
 # Le facteur de vitesse pour l'attribut FLYING_SPEED
-speed_boost: 0.06
+speed_boost: 0.025
