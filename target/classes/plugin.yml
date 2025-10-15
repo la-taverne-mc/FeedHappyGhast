@@ -1,0 +1,18 @@
+name: FeedHappyGhast
+version: '1.0'
+main: fr.Like.feedHappyGhast.FeedHappyGhast
+author: IxLikexYoou
+api-version: '1.21.8'
+
+
+commands:
+  fhgreload:
+    description: Recharge la configuration du plugin HappyGhast.
+    usage: /fhg reload
+    permission: feedhappyghast.reload
+    permission-message: Vous n'avez pas la permission d'utiliser cette commande.
+
+permissions:
+  feedhappyghast.reload:
+    Description: Recharge la configuration du plugin HappyGhast.
+    default: op

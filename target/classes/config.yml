@@ -1,0 +1,9 @@
+# Le matériau de l'objet utilisé pour nourrir le Happy Ghast
+item: golden_apple
+
+# La durée de l'effet de vitesse en secondes
+# 120 secondes = 2 minutes
+duration_in_seconds: 1200
+
+# Le facteur de vitesse pour l'attribut FLYING_SPEED
+speed_boost: 0.06
