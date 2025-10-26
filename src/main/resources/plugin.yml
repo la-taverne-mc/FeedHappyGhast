@@ -2,17 +2,34 @@ name: FeedHappyGhast
 version: '1.0'
 main: fr.Like.feedHappyGhast.FeedHappyGhast
 author: IxLikexYoou
-api-version: '1.21.8'
-
+api-version: '1.21'
 
 commands:
-  fhgreload:
-    description: Recharge la configuration du plugin HappyGhast.
-    usage: /fhg reload
-    permission: feedhappyghast.reload
+  # Commande principale (recommandée)
+  fhg:
+    description: Commande principale de FeedHappyGhast.
+    usage: /fhg <give|reload|disable>
+    aliases: [feedghast, hg]
+    permission: feedhappyghast.use
     permission-message: Vous n'avez pas la permission d'utiliser cette commande.
 
 permissions:
+  # Permission de base pour /fhg
+  feedhappyghast.use:
+    description: Permet d'utiliser la commande /fhg.
+    default: op
+
+  # Permission pour /fhg reload (et /fhgreload)
   feedhappyghast.reload:
-    Description: Recharge la configuration du plugin HappyGhast.
+    description: Recharge la configuration du plugin HappyGhast.
+    default: op
+
+  # Permission pour /fhg give
+  feedhappyghast.give:
+    description: Permet de give les objets personnalisés (Joyau/Fragment).
+    default: op
+
+  # Permission pour /fhg disable
+  feedhappyghast.disable:
+    description: Permet de désactiver le plugin sans redémarrer le serveur.
     default: op

@@ -1,9 +1,30 @@
-# Le matériau de l'objet utilisé pour nourrir le Happy Ghast
-item: golden_apple
+# Durée de l'effet de vitesse en secondes
+duration_in_seconds: 600
+# Multiplicateur de vitesse (add_value). 0.1 = +10%
+speed_boost: 0.04
 
-# La durée de l'effet de vitesse en secondes
-# 120 secondes = 2 minutes
-duration_in_seconds: 1200
+# Configuration de l'objet "Amazonite" (Gem)
+amazonite:
+  name: "&bAmazonite"
+  base_material: EMERALD
+  CustomModelData: 666
+  lore:
+    - "&7Nourrissez un Happy Ghast"
+    - "&7avec ceci pour le remplir"
+    - "&7d'une énergie nouvelle."
+  flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
 
-# Le facteur de vitesse pour l'attribut FLYING_SPEED
-speed_boost: 0.06
+# Configuration de l'objet "Fragment"
+fragment_amazonite:
+  name: "&fFragment d'Amazonite"
+  base_material: EMERALD
+  CustomModelData: 665
+  lore:
+    - "&7Combine-en quatre avec"
+    - "&7une larme de Ghast pour"
+    - "&7former une Amazonite."
+  flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
